@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bases du JS manipulation du html</title>
+</head>
+<body>
+<div id="message"  class="cls"></div>
+<div class="cls"></div>
+<div class="cls"></div>
+<div class="cls"></div>
+<div class="cls"></div>
+<input type="text" name="fullName" value="Alain JACQ">
+<p>Click the button get the text content of the button element.</p>
+<button onclick="myFunction()" id="myBtn">Try it just IT Alain</button>
+<p><strong>Note:</strong> le bouton lance la fonction qui récupere le text sur le bouton
+<p id="demo"></p>
+
+
+<p id="demo2">   This element has extra spacing  and contains <span>a span element</span>.</p>
+<button onclick="getInnerText()">Get innerText</button>
+<button onclick="getHTML()">Get innerHTML</button> 
+<button onclick="getTextContent()">Get textContent</button>
+<p><strong>Note:</strong> The textContent property is not supported in Internet Explorer 8 and earlier</p>
+<p id="demo2"></p>
+
+<p id="demo3">
+<p>Click the button to demonstrate line-breaks in a confirm box.</p>
+<button onclick="myFunctionConfirm()">Try it/Essayer le</button>
+<p id="demo3"></p>
+
+<p>Click the button to display the domain name of the server that loaded this document.</p>
+
+<button onclick="myFunctionDomain()">Try it nom du Domain</button>
+
+<p id="demo4"></p>
+
+
+<p>Click the button to display date and time.</p>
+
+<button onclick="myFunctionClock()">Try it Clock</button>
+
+<p id="demo5"></p>
+
+<p>Click the button to display document.title et URL</p>
+
+<button onclick="myFunctionTitle()">Try it title et URL</button>
+
+<p id="demo6"></p>
+
+<p id="demo7">Click the button to replace this document with new content.</p>
+<button onclick="myFunctionRewrite()">Try it</button>
+
+<p id="demo8">Click the button to open neuw window andd add somme content in.</p>
+<button onclick="myFunctionOpenWindow()">Try it</button>
+
+<p>
+    Cats: <input name="x" type="radio" value="Cats ">
+    Dogs: <input name="x" type="radio" value="Dogs " >
+    Snakes: <input name="x" type="radio" value="snakes"><br/>
+        <SELECT name="x" size="1    ">
+            <OPTION>lundi
+            <OPTION>mardi
+            <OPTION>mercredi
+            <OPTION>jeudi
+            <OPTION>vendredi
+</p>
+<p>
+    <input type="button" onclick="getElements()" value="How many elements named x?">
+</p>  
+<p id="demo9"></p>
+
+
+<input type="text" size="20">
+<input type="text" size="20">
+<input type="text" size="20"><br>
+<p>
+<input type="button" onclick="getElements()" value="How many input elements?">
+</p>
+<p id="demo10"></p>
+
+
+
+
+
+<script src="domhtml.js"></script>
+</body>
+</html>

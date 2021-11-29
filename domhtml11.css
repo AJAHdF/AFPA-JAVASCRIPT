@@ -1,0 +1,64 @@
+
+/* Il existe en CSS une propriété très puissante : display  .
+ Elle est capable de transformer n'importe quel élément de votre page 
+ d'un type vers un autre. Avec cette propriété magique, imposer à mes liens
+ (originellement de type inline) d'apparaître sous forme de blocs : */
+a
+{
+        display:block
+}
+
+element
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+/* Paragraphes en bleu par défaut */
+p
+{
+    color: blue;
+}
+
+nav
+{
+    /* float:left; */
+    display: inline-block;
+    width: 150px;
+    border: 1px solid black;
+    right: 0px;
+    bottom: 0px;
+}
+
+section
+{
+        display: inline-block;    
+        border: 1px solid blue;
+        margin-left: 170px;
+        padding: 25px 25px 25px 25px;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+/* @media screen and (max-width: 1024px)
+{
+    p
+    {
+        color: rgb(215, 226, 228); 
+        background-color: rgb(21, 99, 99);
+        font-size: 1.2em;
+    }
+} */
+
+
+nav
+{
+    float: left;
+    width: 150px;
+    border: 1px solid black;
+}
+
+section
+{
+    border: 1px solid blue;
+}

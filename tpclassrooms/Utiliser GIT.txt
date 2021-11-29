@@ -1,0 +1,25 @@
+git pull                                            (récupère toute les données de la branche mais remplace)
+git push origin master                                 (nom de la branche)
+git pull --rebase                                    (pull le master et le fusionne avec les fichiers en cours)
+git commit -am "commentaire"                         (add et commit en meme temps)
+git commit -m "commentaire entre parentheses"        (commit simple)
+git status
+
+================================================================================================
+
+LES BRANCHES :
+
+git branch -a                                         (voir tte les branches)
+git branch nomDeBranch                                 (creer une branche nomDeBranch)
+git checkout -b nomDeBranch                            (creer une branche et vas dessus)
+git checkout nomDeBranch                             (aller sur la branche nomDeBranch)
+git brand -D nomDeBranch1 nomDeBranch2                 (deleat en local les branche nomDeBranch1 et nomDeBranch2)
+
+================================================================================================
+
+POUR LES PULL :
+
+1) git add *                                         (sur la branche !!!)
+2) git commit -m "commentaire"
+3) git pull --rebase origin master                    (récupère le master et le fusionne avec notre travail)
+4) git push origin NomDeBranch

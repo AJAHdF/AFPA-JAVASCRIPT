@@ -1,0 +1,26 @@
+nav
+{
+    display: inline-block;
+    width: 150px;
+    border: 1px solid black;
+    vertical-align: top;
+    padding: auto;
+    /* position: absolute;
+    right:0px;
+    bottom: 0px; */
+}
+
+
+a
+{
+    display: block;
+}
+
+section
+{
+    display:inline-block;
+    border: 1px solid blue;
+    /* width: 600px; */
+    vertical-align: top;
+}
+

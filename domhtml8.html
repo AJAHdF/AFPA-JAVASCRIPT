@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form en HTML (openclassroom) </title>
+        <meta charset= "utf-8">
+        <link rel="stylesheet" media="screen" type="text/css" href="domhtml7.css" />
+    </head>
+    
+    <body>
+        <p> texte avant formulaire</p>
+        <!-- la méthode get est limitée à 256 caracteres
+        post est privilegie car bcp de données -->
+        <form action="traitement.php" method="post"> 
+            <p> texte à l'interieur du formulaire</p>
+            <!-- l'id faire ref à un élement HTML name est une variable -->
+            <p>
+                 <!-- le for assoicie le label à ID pseudoi -->
+                  <label for="pseudoi">Votre pseudo : </label>
+                  <input type="text" name="pseudo" id="pseudoi" placeholder="Zozo"  size="15"   /> 
+            </p>
+            <p>
+                  <label for="password">Votre mot de passe : </label>
+                  <input type="password" name="password" id="password" placeholder="motdepasse"  size="15" /> 
+            </p>
+            <p>
+                <label for="commentaire">Votre commentaire : </label><br/>
+                <textarea name="commentaire" id="commentaire"  rows="5" cols="40" placeholder="que pensez vous de la reproduction du cafard phytox en milieu acqueux?"></textarea> 
+            </p>
+
+            <p>
+                <label for="url">Votre URL : </label>
+                <input type="url" name="url" id="url" placeholder="https://www.lequipe.fr" /> 
+            </p>
+            <p>
+                <label for="color">Votre couleur : </label>
+                <input type="color" name="color" id="colo" /> 
+            </p>
+            <p>
+                <label for="datenai">Votre date de naissance : </label>
+                <input type="date" name="datenai" id="datenai" /> 
+            </p>
+            <p>
+                <label for="case">Votre case à cocher : </label>
+                <input type="checkbox" name="case" id="case" /> 
+            </p>
+            <p>
+                cocher les aliments que vous aimez :<br/>
+                <input type="checkbox" name="frites" id="frites"  checked /><label for="frites">Frites</label><br/> 
+                <input type="checkbox" name="nuggets" id="nuggets" /><label for="nuggets">Nuggets</label><br/> 
+                <input type="checkbox" name="steack" id="steak" /><label for="steak">Steacks hachés</label><br/> 
+                <input type="checkbox" name="salade" id="salade" /><label for="salade">Salade fraicheur</label><br/> 
+            </p>
+
+            <p>
+                Veuillez indiquer la tranche d'âge dans laquelle vous vous situez : <br/>
+                <input type="radio" name="age" value="moins15" id="moins15" /><label for="moins15">Moins de 15 ans</label><br/> 
+                <input type="radio" name="age" value="medium15-25" id="medium15-25" checked /><label for="medium15-25">15-25</label><br/>         
+                <input type="radio" name="age" value="medium25-40" id="medium25-40" /><label for="medium25-40">25-40</label><br/> 
+                <input type="radio" name="age" value="plus40" id="plus40" /><label for="plus40">Au delà de 40</label><br/> 
+            </p>
+            <p>
+                Veuillez indiquer le continent où vous habitez : <br/>
+                <input type="radio" name="continent" value="asie" id="asie" /><label for="asie">Asie pacifique</label><br/> 
+                <input type="radio" name="continent" value="europe" id="europe" checked /><label for="europe">Europe</label><br/>         
+                <input type="radio" name="continent" value="amnord" id="amnord" /><label for="amnord">Amérique du Nord</label><br/> 
+                <input type="radio" name="continent" value="amsud" id="amsud" /><label for="amsud">Amérique du Sud</label><br/> 
+            </p>
+
+            <p>
+                <label for="pays">Dans quel pays habitez vous ?</label><br/>
+                <select name="pays" id="pays">
+                    <option value="allemagne">Allemagne</option>
+                    <option value="france" >France</option>
+                    <option value="italie">Italie</option>
+                    <option value="UK">Royaumne Uni</option>
+                </select>
+            </p>
+            <p>
+                <label for="country">Dans quel pays habitez vous ?</label><br/>
+                <select name="country" id="country">
+                    <optgroup label=Asie>
+                        <option value="japon">Japon</option>
+                        <option value="coree" >Coree</option>
+                        <option value="Birmanie">Birmanie</option>
+                    </optgroup>
+                    <optgroup label=Europe>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="france"  >France</option>
+                        <option value="italie">Italie</option>
+                        <option value="UK">Royaumne Uni</option>
+                    </optgroup>
+                    <optgroup label=Amérique>
+                        <option value="canada">Canada</option>
+                        <option value="usa" >Usa</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="envoyer" />
+            </p>
+
+
+            </form>
+        <p> texte après le formulaire</p>
+    </body>
+</html>
+
